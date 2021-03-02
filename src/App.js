@@ -25,10 +25,10 @@ function App() {
           </Form>
         </Navbar>
       </div>
-      <Router>
+      
         <Route exact path='/'><UserList setListOfUSer={setListOfUSer} listOfUSer={listOfUSer} /></Route>
         <Route path='/Profile/:id' render={(props) => <Profile listOfUSer={listOfUSer} {...props} />} />
-      </Router>
+     
     </div>
   );
 }
